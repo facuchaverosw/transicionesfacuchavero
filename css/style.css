@@ -1,0 +1,92 @@
+ 
+ /*estilo body*/
+ body{
+    background-image: linear-gradient(to right,rgb(1, 128, 192),rgb(96, 184, 231),rgb(183, 183, 240)
+    );
+    margin: 0%;
+ }
+ /*estilos header*/
+ header {
+    margin: 0%;
+    background-color:aqua ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(to right,rgb(2, 38, 56),rgb(26, 86, 119),rgb(139, 139, 232)
+    );
+   
+}
+header  h1:hover{
+    transform: scale(0.95);
+    transition: all 0.5s;
+    
+
+}
+/*estilos main*/
+main{
+    display: flex;
+    align-items: center;
+   flex-direction: column;
+}
+img{
+  width: 25%;
+  margin: 50px;
+}
+.imagen1:hover {
+   transform: scale(1.20) translateY(-5px);
+   transition: all 1s;
+  
+   
+}
+@keyframes left-in{
+    0%{
+      left: -100%;
+      opacity: 0;
+    }
+  
+    100%{
+            left: 0;
+        opacity: 3;
+    
+        }
+        
+    }
+
+.imagen2{
+    position: relative;
+    animation-name: left-in;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+     }
+     
+     
+   
+@keyframes shake{
+    0%{
+        transform: rotate(25deg);
+    }
+    50%{
+        transform: rotate(-15deg);
+    }
+    100%{
+            transform:rotate(20deg);
+        }
+        
+    }
+    .imagen3{
+        transition: all 0.5s ease-in;
+        /*animacion*/
+        animation-name:shake;
+        animation-duration: 2s;
+        animation-iteration-count: infinite;
+    }
+    .animate__backInDown{
+        animation-iteration-count: infinite;
+        animation-duration: 10s;
+
+    }
+    
+
+
+
+/*estilos footer*/
